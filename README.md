@@ -520,7 +520,7 @@ Interpretation:
 
 ```text
 README.md
-contractCranker.py
+contactCranker.py
 qps_benchmark.py
 setup_indexes_and_summary.js
 results.txt
