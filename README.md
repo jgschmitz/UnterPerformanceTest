@@ -8,6 +8,7 @@ This README documents the completed Unter performance workshop exercise: loading
 
 ## Executive Summary
 
+The shared lesson env blew up in the middle of the night so I re-directed everything to my local project
 The assignment was to optimize MongoDB performance for a ride-sharing company, **Unter**, using a customer-service contact dataset.
 
 | Benchmark Area | Assignment Goal |
