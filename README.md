@@ -73,7 +73,6 @@ Important setup items:
 - Atlas database user had to be created for the new cluster.
 - Local laptop IP had to be allowlisted in Atlas Network Access.
 - Disk was scaled up to support the 5M full load.
-- Cluster was scaled up to M140 during the full load to improve throughput.
 
 ---
 
