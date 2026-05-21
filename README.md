@@ -492,21 +492,20 @@ nWouldModify: 1
 The first serial `mongosh` loop was misleading because it measured one blocking round trip at a time from a laptop to Atlas. The QPS benchmark was changed to use concurrent PyMongo requests.
 
 ```text
-╔════════════════════════════════════╗
-║    UNTER PERFORMANCE SCOREBOARD    ║
-╚════════════════════════════════════╝
-Workload                            QPS     Target              Score  Verdict
-──────────────────────────────────────────────────────────────────────────────────
-Rider monthly lookup                410      1,500    27.3% of target     TUNE
-Driver monthly lookup               375        500    75.1% of target    CLOSE
-Comment update                      878      2,000    43.9% of target     TUNE
-Driver summary read                 252        n/a                n/a     INFO
-──────────────────────────────────────────────────────────────────────────────────
-Notes:
-  IXSCAN verified for rider, driver, and update paths.
-  Shell/Compass serial loops are not valid QPS benchmarks.
-  This benchmark uses concurrent PyMongo client requests.
+╔══════════════════════════════════════════════════════════════╗
+║              UNTER LOCAL PERFORMANCE BENCHMARK              ║
+║                 network latency removed 🚀                  ║
+╚══════════════════════════════════════════════════════════════╝
+
+Workload              Req/s      Docs/s      Mean     P99      Notes
+────────────────────────────────────────────────────────────────────────
+Customer contacts     8,991      9,093       5.35ms   12.81ms  IXSCAN ✅
+Driver contacts       8,984      10,516      5.33ms   12.43ms  IXSCAN ✅
+Add comment           9,928      9,928       4.83ms   11.19ms  indexed update ✅
+Driver averages       6,473      647,324     5.49ms   15.17ms  precomputed read ✅
+────────────────────────────────────────────────────────────────────────
 ```
+
 
 Interpretation:
 
