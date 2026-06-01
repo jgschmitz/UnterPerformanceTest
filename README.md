@@ -29,6 +29,7 @@ Completed work:
 - Verified lookup/update paths with `explain("executionStats")`.
 - Measured concurrent QPS from a local PyMongo benchmark.
 - Captured shell proof queries and submission artifacts.
+- Was not counted in the official table because didn't use shared environment (which was broken) 
 
 ---
 
