@@ -1,6 +1,6 @@
 # Unter Performance Workshop — Atlas + PyMongo Submission Notes
 
-This README documents the completed Unter performance workshop exercise: loading a 5M-contact ride-support dataset into MongoDB Atlas, creating benchmark indexes, validating query plans, building a materialized driver summary, and measuring QPS.
+The README documents the completed Unter performance workshop exercise: loading a 5M-contact ride-support dataset into MongoDB Atlas, creating benchmark indexes, validating query plans, building a materialized driver summary, and measuring QPS.
 
 > Credentials are intentionally omitted. Replace `USER:PASS` with a valid Atlas database user before running scripts.
 
