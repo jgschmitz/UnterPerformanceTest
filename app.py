@@ -13,8 +13,8 @@ from pymongo import InsertOne
 # Connections
 # ------------------------------------------------------------------------------
 
-ATLAS_URI = "mongodb+srv://:@perfworkshop.tnhx6.mongodb.net/?retryWrites=true&w=majority"
-LOCAL_URI = "mongodb://:@localhost:27017/"
+ATLAS_URI = ""
+LOCAL_URI = ""
 
 DB_NAME = "unter"
 
